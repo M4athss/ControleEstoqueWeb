@@ -25,10 +25,8 @@ body {
 body {
     margin: 0;
     background: linear-gradient(180deg, var(--bg), #eef3ff 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
+    min-height: 100vh;
+    padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #0b1220;
@@ -37,14 +35,16 @@ body {
 
 .page-wrapper {
     width: 100%;
-    max-width: 1100px
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 0;
 }
 
 
 .card {
     width: 100%;
     max-width: var(--max-width);
-    margin: auto;
+    margin: 100px auto 0 auto;
     background: var(--card);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
@@ -156,4 +156,58 @@ input:focus {
 
 .link-forgot:hover {
     text-decoration: underline
+}
+
+/* Barra de menu superior */
+.navbar {
+    width: 100%;
+    background: var(--primary);
+    border-radius: var(--radius) var(--radius) 0 0;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0 1.5rem;
+    height: 56px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.menu li a:hover {
+    background: var(--accent);
+}
+
+.menu .logout a {
+    background: var(--error);
+    color: #fff;
+    margin-left: 2rem;
+    font-weight: 600;
+}
+.menu .logout a:hover {
+    background: #b52a25;
 }
