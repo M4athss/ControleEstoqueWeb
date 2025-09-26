@@ -203,7 +203,6 @@ input:focus {
     border-radius: var(--radius) var(--radius);
     box-shadow: var(--shadow);
     margin: 1%;
-
     position: fixed;
     top: 0;
     left: 0;
@@ -218,7 +217,7 @@ input:focus {
     padding: 0 1.5rem;
     height: 56px;
     align-items: center;
-    gap: 2rem;
+    /*gap: 1rem;*/
     position: relative;
 
 }
