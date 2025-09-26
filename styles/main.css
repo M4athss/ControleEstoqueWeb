@@ -1,10 +1,10 @@
 :root {
     --bg: #f5f7fb;
     --card: #ffffff;
-    --primary: #0066ff;
-    --accent: #2b6ef6;
+    --primary: #048000;
+    --accent: #4fb94b;
     --muted: #6b7280;
-    --error: #d9534f;
+    --error: #ca2620;
     --radius: 12px;
     --shadow: 0 6px 20px rgba(10, 23, 44, 0.08);
     --max-width: 420px;
@@ -160,11 +160,12 @@ input:focus {
 
 /* Barra de menu superior */
 .navbar {
-    width: 100%;
+    width: 98%;
     background: var(--primary);
-    border-radius: var(--radius) var(--radius) 0 0;
+    border-radius: var(--radius) var(--radius);
     box-shadow: var(--shadow);
-    margin-bottom: 2rem;
+    margin: 1%;
+
     position: fixed;
     top: 0;
     left: 0;
@@ -179,8 +180,9 @@ input:focus {
     padding: 0 1.5rem;
     height: 56px;
     align-items: center;
-    justify-content: flex-start;
     gap: 2rem;
+    position: relative;
+
 }
 
 .menu li {
@@ -205,8 +207,11 @@ input:focus {
 .menu .logout a {
     background: var(--error);
     color: #fff;
-    margin-left: 2rem;
     font-weight: 600;
+}
+
+.menu .logout {
+    margin-left: auto;
 }
 .menu .logout a:hover {
     background: #b52a25;
