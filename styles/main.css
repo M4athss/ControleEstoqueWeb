@@ -1,10 +1,12 @@
 :root {
     --bg: #f5f7fb;
     --card: #ffffff;
-    --primary: #048000;
-    --accent: #4fb94b;
+    --primary: #005F3B;
+    --accent: #3FB78A;
     --muted: #6b7280;
-    --error: #ca2620;
+    --error: #CC0137;
+    --submenu-primary: #3FB78A;
+    --submenu-accent:#457EB1;
     --radius: 12px;
     --shadow: 0 6px 20px rgba(10, 23, 44, 0.08);
     --max-width: 420px;
@@ -268,7 +270,7 @@ input:focus {
     border-radius: 8px;
     box-shadow: none;
     cursor: pointer;
-    transition: background
+    transition: all, 0.2s;
 }
 
 .drop-down__button:hover {
@@ -294,7 +296,7 @@ input:focus {
     position: absolute;
     width: 100%;
     left: 0;
-    background-color: #fff;
+    background-color: var(--submenu-primary);
     border-radius: 4px;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
     transition: all 0.3s;
@@ -311,7 +313,7 @@ input:focus {
 }
 
 .drop-down__menu-box:before {
-    content: '';
+    content: normal;
     background-color: transparent;
     border-right: 8px solid transparent;
     position: absolute;
@@ -323,11 +325,11 @@ input:focus {
 }
 
 .drop-down__item {
-    font-size: 13px;
-    padding: 13px 0;
+    font-size: 18px;
+    padding: 10px 0;
     text-align: left;
     font-weight: 500;
-    color: #909dc2;
+    color: var(--card);
     cursor: pointer;
     position: relative;
     border-bottom: 1px solid #e0e2e9;
