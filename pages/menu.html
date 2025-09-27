@@ -10,7 +10,24 @@
     <div class="page-wrapper">
         <nav class="navbar">
             <ul class="menu">
-                <li class="btn"><a href="#">Início</a></li>
+                <!--<li class="btn"><a href="#">Início</a></li>-->
+                <li class="btn">
+                    <div class="drop-down">
+                        <div id="dropDown" class="drop-down__button">
+                            <span class="drop-down__name">Início</span>
+                            <svg version="1.1" class="drop-down__icon" xmlns="http://www.w3.org/2000/svg" ></svg>
+                        </div>
+
+                        <div class="drop-down__menu-box">
+                            <ul class="drop-down__menu">
+                                <li data-name="profile" class="drop-down__item">
+                                    Teste
+                                    <svg class="drop-down__item-icon" ></svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
                 <li class="btn"><a href="#">Produtos</a></li>
                 <li class="btn"><a href="#">Estoque</a></li>
                 <li class="btn"><a href="#">Relatórios</a></li>
@@ -22,5 +39,9 @@
             <p>Esta é uma tela simples com barra de menus superior.</p>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/src/main.js"></script>
+
 </body>
 </html>
