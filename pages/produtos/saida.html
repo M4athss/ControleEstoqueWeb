@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Barra de Menu</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <nav class="navbar">
+            <ul class="menu">
+                <li class="btn"><a href="/pages/menu.html">Início</a></li>
+                <li class="btn">
+                    <div class="drop-down">
+                        <div id="dropDown-produtos" class="drop-down__button">
+                            <span class="drop-down__name">Produtos</span>
+                        </div>
+                        <div class="drop-down__menu-box">
+                            <ul class="drop-down__menu">
+                                <li data-name="profile" class="drop-down__item">
+                                    <a class="drop-down__lista" href="/pages/produtos/itens.html">Itens</a>
+                                </li>
+                                <li data-name="profile" class="drop-down__item">
+                                    <a class="drop-down__lista" href="/pages/produtos/consulta.html">Consulta</a>
+                                </li>
+                                <li data-name="profile" class="drop-down__item">
+                                    <a class="drop-down__lista" href="/pages/produtos/entrada.html">Entrada</a>
+                                </li>
+                                <li data-name="profile" class="drop-down__item">
+                                    <a class="drop-down__lista" href="/pages/produtos/saida.html">Saída</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="btn">
+                    <div class="drop-down">
+                        <div id="dropDown-tabelas" class="drop-down__button">
+                            <span class="drop-down__name">Tabelas</span>
+                        </div>
+                        <div class="drop-down__menu-box">
+                            <ul class="drop-down__menu">
+                                <li data-name="profile" class="drop-down__item">
+                                    <a class="drop-down__lista" href="/pages/Tabelas/classificacao.html">Classificação</a>
+                                </li>                                    
+                                <li data-name="profile" class="drop-down__item">
+                                    <a class="drop-down__lista" href="/pages/Tabelas/cdc.html">CDC</a>
+                                    </li>
+                                <li data-name="profile" class="drop-down__item">
+                                    <a class="drop-down__lista" href="/pages/Tabelas/localarmazenagem.html">Local de Armazenagem</a>
+                                    </li>
+                                <li data-name="profile" class="drop-down__item">
+                                    <a class="drop-down__lista" href="/pages/Tabelas/usuarios.html">Usuários</a>
+                                    </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="btn">
+                    <div class="drop-down">
+                        <div id="dropDown-relatorios" class="drop-down__button">
+                            <span class="drop-down__name">Relatórios</span>
+                        </div>
+                        <div class="drop-down__menu-box">
+                            <ul class="drop-down__menu">
+                                <li data-name="profile" class="drop-down__item">
+                                    <a class="drop-down__lista" href="/pages/relatorios/emissao.html">Emissão</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="btn logout"><a href="#">SAIR</a></li>
+            </ul>
+        </nav>
+        <div class="card">
+            <img src="/img/logo.png" alt="Logotipo da aplicação" class="logo" />
+            <h1>Bem-vindo ao Controle de Estoque</h1>
+            <p>Esta é uma tela simples com barra de menus superior.</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/src/main.js"></script>
+
+</body>
+
+</html>
