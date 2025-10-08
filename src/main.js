@@ -76,8 +76,8 @@ $(document).ready(function () {
                     nome: row.find('td:eq(1)').text(),
                     email: row.find('td:eq(2)').text(),
                     nivel: row.find('td:eq(3)').text(),
-                    grupo: row.find('td:eq(4)').text(),
-                    data: row.find('td:eq(5)').text()
+                    grupo: row.find('td:eq(4)').text()
+                  //  data: row.find('td:eq(5)').text()
                 };
                 abrirFormulario('editar', dadosUsuario);
             }
@@ -120,7 +120,7 @@ $(document).ready(function () {
                         <td>${email}</td>
                         <td>${nivel}</td>
                         <td>${grupo}</td>
-                        <td>${data}</td>
+                        //<td>${data}</td>
                         <td class="table-actions">
                             <button class="btn-icon btn-edit" data-id="${newId}">✏️</button>
                             <button class="btn-icon btn-delete" data-id="${newId}">🗑️</button>
