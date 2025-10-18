@@ -1,4 +1,4 @@
-function saveUser() {
+/*function saveUser() {
 
     const nome = document.getElementById("userName").value;
     const senha = document.getElementById("userPassword").value;
@@ -15,12 +15,13 @@ function saveUser() {
             nome: nome,
             senha: senha,
             email: email,
-            cpf: cpf
+            cpf: cpf,
+
         })
     })
         .then(response => response.json())
         .then(dados => {
-            console.log("Usuário criado:", dados);
+            console.log("Novo usuário cadastado com sucesso!", dados);
         })
         .catch(erro => {
             console.error("Erro:", erro);
@@ -28,3 +29,4 @@ function saveUser() {
 
 
 }
+*/
