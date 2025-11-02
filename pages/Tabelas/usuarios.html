@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/src/auth.js"></script> 
     <title>Página com Barra de Menu</title>
     <link rel="stylesheet" href="/styles/main.css">
 </head>
@@ -114,7 +115,7 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="userLevel">Nível de Acesso</label>
-                            <select id="userLevel" name="userLevel" class="input-select" required>
+                            <select id="userLevel" name="userLevel" class="input-select">
                                 <option value="0" disabled selected>Selecione um nível</option>
                                 <option value="Admin">Administrador</option>
                                 <option value="User">Usuário Padrão</option>
@@ -135,7 +136,7 @@
 <!--                        </div>-->
                     <div class="form-actions">
                         <button type="button" id="btnCancelar" class="btn btn-secondary">Cancelar</button>
-                        <button type="submit" class="btn btn-primary" onclick="saveUser()">Salvar</button>
+                        <button type="submit" class="btn btn-primary">Salvar</button>
                     </div>
                 </form>
             </div>
